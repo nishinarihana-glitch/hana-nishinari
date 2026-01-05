@@ -1,0 +1,804 @@
+/* ===============================
+   基本設定
+================================= */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* ===============================
+   ヘッダー
+================================= */
+header {
+    background-color: #2c3e50; /* ← 元に戻した色 */
+    color: white;
+    padding: 20px;
+}
+
+/* ===============================
+   ナビゲーション（白背景・黒文字）
+================================= */
+nav {
+    position: relative;
+    background-color: #ffffff; /* 白 */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #696969;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+    border-bottom: 3px solid transparent; /* 下線の土台 */
+    transition: border-bottom 0.3s ease;
+}
+
+/* hover と focus 両方で表示 */
+nav a:hover,
+nav a:focus {
+    outline: none;
+    border-bottom: 3px solid #0047AB; /* コバルトブルー */
+}
+
+/* メニューバー「提供サービス」の文字色を他と同じに */
+nav .dropbtn {
+  color: #696969;
+}
+
+/* ドロップ内リンク（華珈琲・民泊） */
+nav .dropdown-content a {
+  border-radius: 0;      /* 各項目も四角 */
+}
+
+/* 提供サービスのドロップダウン背景を白に */
+nav .dropdown-content {
+  background-color: #ffffff; /* 白 */
+  border-radius: 0;          /* 四角のまま */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* ===============================
+   セクション共通
+================================= */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    color: #4CAF50;
+    border-left: 6px solid #4CAF50;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   利用者の声
+================================= */
+#testimonials {
+    background-color: #f9fdf9;
+}
+
+blockquote {
+    background-color: #f0f8f5;
+    border-left: 5px solid #4CAF50;
+    margin: 20px 0;
+    padding: 15px 20px;
+    font-style: italic;
+    color: #333;
+    border-radius: 4px;
+}
+
+blockquote footer {
+    text-align: right;
+    font-size: 0.9em;
+    color: #666;
+}
+
+p {
+    font-size:18px; /*  説明文や本文を読みやすく */
+}
+
+blockquote p {
+    font-size: 17px; /* 利用者の声を少し落ち着いた大きさで */
+}
+
+/* ===============================
+   フッター
+================================= */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ===============================
+   about レイアウト
+================================= */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1 1 60%;
+}
+
+.about-image {
+    flex: 1 1 35%;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ===============================
+   中央表示画像（レスポンシブ対応）
+================================= */
+.center-image {
+  display: block;      /* ブロック化して中央寄せ */
+  margin: 0 auto;      /* 左右自動で中央に配置 */
+  width: 50%;          /* デスクトップ時の幅 */
+  height: auto;        /* 高さ自動調整で縦横比保持 */
+  border-radius: 8px;  /* 角を丸くする場合 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.center-image:hover {
+  transform: scale(1.03); /* ホバーで少し拡大 */
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .center-image {
+    width: 90%; /* 幅を画面いっぱいに */
+  }
+}
+
+
+/* ===============================
+   ヘッダー装飾画像
+================================= */
+.header-decoration-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 100px; /* 画像の高さに応じて調整 */
+    margin-bottom: -30px; /* ヘッダーとつなげて隙間なし */
+}
+
+.header-decoration {
+    width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.9;
+}
+
+
+.img-box img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.img-box img:hover {
+    transform: scale(1.03);
+}
+
+/* 左寄せで幅40%の画像 */
+.half-left {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/* ===============================
+   iframe（Googleマップ）
+================================= */
+iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.access-info {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.access-info h3 {
+  margin-top: 15px;
+  color: #2c3e50;
+}
+.access-info ul {
+  padding-left: 20px;
+}
+
+/* ===============================
+   レスポンシブ対応
+================================= */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 8px auto;
+        background-color: #ffffff; /* 白 */
+        color: #696969;            /* 黒 */
+        border-radius: 6px;
+        width: 90%;
+    }
+
+    nav a:hover {
+        background-color: #f2f2f2;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-text, .about-image {
+        flex: 1 1 100%;
+    }
+
+    .about-image {
+        text-align: center;
+    }
+
+    .half-left {
+        width: 100%;
+    }
+}
+
+/* ===============================
+   提供サービス カード表示
+================================= */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.service-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+}
+/* ===============================
+   ご利用の流れフロー
+================================= */
+.flow-steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.flow-step {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px 20px;
+  text-align: center;
+  flex: 1 1 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.flow-step:hover {
+  transform: translateY(-3px);
+}
+
+.step-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1abc9c;
+  margin-bottom: 10px;
+}
+
+.flowchart-image {
+  display: block;
+  margin: 0 auto;
+  width: 50%;       /* デスクトップ時 */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: none;  /* 影なし */
+  transition: none;  /* ホバー効果なし */
+}
+
+@media (max-width: 768px) {
+  .flowchart-image {
+    width: 90%;
+  }
+}
+
+/* ===============================
+   サービスカード a タグ対応
+================================= */
+.services-container a.service-card {
+  text-decoration: none;  /* リンクの下線を消す */
+  color: inherit;         /* テキスト色をカード色に */
+  display: block;         /* ブロック化してカード風に */
+}
+.services-container a.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* ===============================
+   ホバー・フォーカスで表示「華珈琲」と「民泊」を選択できる
+================================= */
+/* 親ボタン */
+.dropbtn {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+/* ヘッダー上部の連絡情報 */
+.header-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  background-color: #34495e; /* 好みの色に変更可 水色#a1d8e2*/
+  padding: 8px 20px;
+  color: white;
+  font-size: 17px;
+}
+
+/* 電話番号・受付時間・提供時間のスタイル */
+.contact-info span {
+  margin-right: 15px;
+ font-weight: bold; /* ←ここで太文字に */
+}
+
+/* ===============================
+  お問い合わせボタン
+================================= */
+/* メインのお問い合わせボタン */
+.contact-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1abc9c;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #16a085;
+}
+
+/* ヘッダー上部専用 */
+.header-top .contact-btn {
+  background-color: #fff;
+  color: #7b5544;
+  padding: 6px 15px;
+  font-size: 1rem;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: #34495e;
+  color: #fff;
+}
+/* ===============================
+   提供サービス ドロップダウン最終調整
+================================= */
+
+/* ドロップダウン全体：白背景・四角 */
+nav .dropdown-content {
+  background-color: #ffffff;   /* 白 */
+  border-radius: 0;            /* 四角 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* 華珈琲・民泊運営（通常時） */
+nav .dropdown-content a {
+  background-color: #ffffff;   /* 通常：白 */
+  color: #696969;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* hover・focus 時：薄いグレー */
+nav .dropdown-content a:hover,
+nav .dropdown-content a:focus {
+  background-color: #f2f2f2;   /* 薄いグレー */
+  color: #696969;
+  outline: none;
+}
+
+/* ===============================
+   アイコン
+================================= */
+/* ロゴを左端に固定 */
+.menu-icon {
+  position: absolute;
+  left: 20px;          /* 左余白 */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .menu-icon a:hover img {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* ロゴアイコン hover アニメーション */
+/* ロゴサイズ */
+.menu-icon img {
+  height: 60px;
+  width: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-icon a:hover img,
+.menu-icon a:focus img {
+  transform: scale(1.05); /* 少しだけ拡大 */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+header h1,
+header p {
+  text-align: left;
+  margin: 0 auto;      /* 全体は中央配置 */
+  padding-left: 20px;  /* 左余白 */
+}
+
+/* ===============================
+   マップ
+================================= */
+.map-wrapper {
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .map-wrapper {
+    height: 300px;
+  }
+}
+
+.map-wrapper iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===============================
+   トップへ戻るボタン
+================================= */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #1abc9c;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 2000;
+}
+
+#scrollTopBtn:hover {
+  background-color: #16a085;
+  transform: translateY(-3px);
+}
+
+/* 表示用 */
+#scrollTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===============================
+   夢の宿 画像サイズ調整
+================================= */
+.about-image img {
+  max-width: 70%;   /* ← 70%〜80%がおすすめ */
+  height: auto;
+}
+
+/* ===============================
+   夢の宿体験内容 写真2枚並び
+================================= */
+/* 体験内容 写真2枚並び */
+.experience-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.experience-images img {
+  width: 45%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .experience-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-images img {
+    width: 90%;
+  }
+}
+
+
+/* ===============================
+   Booking.com 予約ボタン
+================================= */
+/* Booking.com 予約ボタン */
+.booking-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #003580;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.booking-btn:hover {
+  background-color: #001f4d;
+}
+
+/* ===============================
+   華珈琲ページ専用ヘッダー
+================================= */
+.cafe-header h1 {
+  color: #6b3e26; /* 珈琲ブラウン */
+}
+
+.cafe-header p {
+  color: #6b3e26; /* 珈琲ブラウン */
+}
+
+.cafe-header {
+  background-color: #d1ffff; /* オレンジ */
+}
+
+/* ===============================
+   華珈琲 トップ画像（端から端まで）
+================================= */
+.cafe-image {
+  width: 100vw;                 /* 画面幅いっぱい */
+  margin-left: calc(50% - 50vw);/* 中央寄せ解除して全幅に */
+  margin-right: calc(50% - 50vw);
+  overflow: hidden;
+}
+
+.cafe-image img {
+  width: 100%;
+  height: auto;
+  display: block;               /* 画像下の余白対策 */
+}
+
+/* ===============================
+   カフェのご案内（中央寄せ）
+================================= */
+.cafe-guide {
+  background-color: #f7efe6; /* ベージュ系 */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cafe-guide h2 {
+  font-size: 1.8rem;
+  color: #7a4a2e; /* ブラウン */
+  margin-bottom: 20px;
+}
+
+.cafe-guide p {
+  max-width: 800px;
+  margin: 0 auto 15px;
+  line-height: 1.8;
+  color: #444;
+  text-align: left;
+}
+.cafe-subtitle {
+  font-weight: bold;
+  font-size: 1.2rem;      /* 少し強調 */
+  color: #7a4a2e;         /* ブラウン系 */
+  margin-bottom: 20px;
+}
+
+
+/* ===============================
+   華珈琲： 見出し調整
+================================= */
+.section-title {
+  text-align: center;          /* 真ん中寄せ */
+  color: #6b4f3b;              /* カフェ系ブラウン（調整OK） */
+  margin-bottom: 40px;
+  border-left: none;           /* 左の┃を消す */
+  padding-left: 0;             /* 余白もリセット */
+}
+
+
+/* ===============================
+   華珈琲 ギャラリー（3枚横並び）
+================================= */
+.cafe-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap; /* 画面が狭いとき折り返す */
+}
+
+.cafe-gallery img {
+  width: 30%;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.cafe-gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .cafe-gallery img {
+    width: 90%;
+  }
+}
+
+.menu-image {
+  width: 100%;
+  margin-top: 10px; /* メニューとの間隔 */
+}
+
+.menu-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===============================
+   華珈琲 メニュー画像をぼかす
+================================= */
+.menu-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,1) 65%,
+    rgba(0,0,0,0) 100%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,1) 65%,
+    rgba(0,0,0,0) 100%
+  );
+}
+
+/* ===============================
+   華珈琲ページ：説明文のみ中央寄せ
+================================= */
+.cafe-guide p,
+#menu p,
+#experience > p,
+#contact > p {
+  text-align: center;
+}
+
+/* ===============================
+   華珈琲専用：ベージュ背景セクション統一
+================================= */
+body.hanacoffee header {
+  background-color:  #d1ffff; /* 水色 */
+}
+
+body.hanacoffee h1,
+body.hanacoffee h2 {
+  color: 4b2e1f;
+}
+
+/* ===============================
+   華珈琲ページ：体験内容リストは左寄せ
+================================= */
+.hanacoffee #experience ul {
+  text-align: left;      /* 箇条書きは左寄せ */
+  max-width: 800px;     /* 幅を制限して読みやすく */
+  margin: 20px auto;    /* 全体は中央に配置 */
+  padding-left: 20px;   /* ・の位置調整 */
+}
+
+.hanacoffee #experience li {
+  text-align: left;
+}
+
+/* ===============================
+   華珈琲ページ：説明文と箇条書きの開始位置を揃える
+================================= */
+.hanacoffee #experience > p {
+  max-width: 800px;   /* ul と同じ幅 */
+  margin: 0 auto 20px;
+  text-align: left;   /* ← 開始位置を揃える */
+}
+
+.hanacoffee #experience ul {
+  max-width: 800px;   /* p と同じ幅 */
+  margin: 0 auto;
+  padding-left: 20px;
+  text-align: left;
+}
+

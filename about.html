@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>華珈琲｜就労継続支援B型事業所 華</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="hanacoffee">
+
+<!-- ヘッダー -->
+<header class="cafe-header">
+  <h1>華珈琲</h1>
+  <p>喫茶サービスを通じて、接客や調理を体験し、働く力を身につけることができます</p>
+</header>
+
+<!-- ナビゲーション -->
+<nav aria-label="メインナビゲーション">
+  <!-- ロゴ（左端固定） -->
+  <div class="menu-icon">
+  　<a href="index.html">
+     <img src="images/logo.png" alt="就労継続支援B型事業所 華 ロゴ">
+  　</a>
+  </div>
+  <a href="index.html">ホーム</a>
+  <a href="#cafe-guide">カフェのご案内</a>
+  <a href="#menu">メニュー</a>
+  <a href="#experience">体験内容</a>
+  <a href="#contact">お問い合わせ</a>
+</nav>
+
+<div class="header-top">
+    <div class="contact-info">
+      <span>受付時間: 9:00-17:00</span>
+      <span>サービス提供時間: 9:30-16:30</span>
+      <span>華珈琲営業時間: 9:30-16:30 ラストオーダー: 15:30</span>
+      <span>TEL: 06-6964-8651</span>
+    </div>
+    <div class="contact-btn-wrapper">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHKXZYnHs-_nS_865wjpKaYiTmb5aNFCIjNDwsC8vfSEcKJw/viewform?usp=dialog/viewform" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="contact-btn">
+        お問い合わせ
+      </a>
+    </div>
+  </div>
+
+    <div class="cafe-image">
+      <img src="images/hana_cafe_2.png" alt="華珈琲モチーフ">
+    </div>
+
+<!-- 華珈琲紹介 -->
+<section id="cafe-guide" class="cafe-guide">
+　<h2 class="section-title">◆ カフェのご案内</h2>
+<p class="cafe-subtitle">地域のみなさんとの憩いの場</p>
+  <p>
+    事業所に併設されたカフェでは、終日モーニングを行っています。
+    美味しい軽食や、ドリンクや軽食を提供しています。
+    地域の方にも開放しており、ゆったりとした時間を
+    お過ごしいただけます。
+  </p>
+<div class="cafe-gallery">
+  <img src="images/hana_cafe.jpg" alt="華珈琲 外観">
+  <img src="images/hana_cafe_4.jpg" alt="華珈琲 店内">
+  <img src="images/hana_cafe_3.jpg" alt="華珈琲 看板">
+</div>
+
+</section>
+
+<section id="menu">
+　<h2 class="section-title">◆ メニュー</h2>
+  <div class="about-container">
+　　<!-- 華珈琲 メニュー画像 -->
+　　　<div class="menu-image">
+ 	 <img src="images/hana_cafe_menu.png" alt="華珈琲 メニュー">
+　　　</div>
+  </div>
+</section>
+
+<!-- 体験内容 -->
+<section id="experience">
+<h2 class="section-title">◆ 体験内容</h2>
+  <p>利用者は以下の体験を通して、実践的な就労スキルを身につけます。</p>
+  <ul>
+    <li>接客対応（注文受付・お会計）</li>
+    <li>調理補助（簡単なサンドイッチ作りなど）</li>
+    <li>清掃・片付け</li>
+    <li>接客マナーや衛生管理の習得</li>
+  </ul>
+</section>
+
+<!-- お問い合わせ -->
+<section id="contact">
+<h2 class="section-title">◆ お問い合わせ</h2>
+  <p>見学や体験希望は、以下からお問い合わせください。</p>
+  <div style="text-align: center; margin: 30px 0;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHKXZYnHs-_nS_865wjpKaYiTmb5aNFCIjNDwsC8vfSEcKJw/viewform?usp=dialog/viewform" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="contact-btn">
+       お問い合わせフォームへ
+    </a>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer>
+  <p>&copy; 2025 就労継続支援B型事業所 華</p>
+</footer>
+<!-- トップへ戻るボタン -->
+<button id="scrollTopBtn" aria-label="トップへ戻る">▲</button>
+<script>
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.classList.add("show");
+    } else {
+      scrollTopBtn.classList.remove("show");
+    }
+  });
+
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

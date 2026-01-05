@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="就労継続支援B型事業所 華（大阪市西成区）は、障がいのある方の自立と社会参加を支援する福祉施設です。多様な就労訓練や民泊運営など、個別のニーズに応じた支援を行っています。">
+  <title>就労継続支援B型事業所 華｜大阪市西成区の福祉支援施設</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header>
+  <h1>就労継続支援B型事業所 華</h1>
+  <p>障がいのある方々の自立と社会参加を支援する</p>
+
+<!-- ナビゲーションバー -->
+<nav aria-label="メインナビゲーション">
+  <!-- ロゴ（左端固定） -->
+  <div class="menu-icon">
+    <a href="#contact">
+      <img src="images/logo.png" alt="就労継続支援B型事業所 華 ロゴ">
+    </a>
+  </div>
+  <a href="#about">事業所について</a>
+  <!-- 提供サービス ドロップダウン -->
+  <div class="dropdown">
+    <a href="#" class="dropbtn">提供サービス</a>
+    <div class="dropdown-content">
+      <a href="about.html">◇華珈琲</a>
+      <a href="yumenoyado.html">◇民泊運営</a>
+    </div>
+  </div>
+  <a href="#flow">ご利用の流れ</a>
+  <a href="#testimonials">利用者の声</a>
+  <a href="#access">アクセス</a>
+  <a href="#contact">お問い合わせ</a>
+</nav>
+
+<img src="images/decorative_overlay.jpg" alt="装飾画像" class="header-decoration">
+
+<div class="header-top">
+    <div class="contact-info">
+      <span>受付時間: 9:00-17:00</span>
+      <span>サービス提供時間: 9:30-16:30</span>
+      <span>華珈琲営業時間: 9:30-16:30 ラストオーダー: 15:30</span>
+      <span>TEL: 06-6964-8651</span>
+    </div>
+    <div class="contact-btn-wrapper">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHKXZYnHs-_nS_865wjpKaYiTmb5aNFCIjNDwsC8vfSEcKJw/viewform?usp=dialog/viewform" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="contact-btn">
+        お問い合わせ
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+/* ドロップダウンの基本 */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropbtn {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+/* ドロップダウンコンテンツ */
+.dropdown-content {
+  display: none; /* 最初は非表示 */
+  position: absolute;
+  background-color: #1abc9c;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  z-index: 100;
+}
+
+/* 選択肢 */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+  background-color: #16a085;
+}
+
+/* フォーカスやホバーで表示 */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+</style>
+<!-- 事業所について -->
+<section id="about">
+  <h2>事業所について</h2>
+  <div class="about-container">
+    <div class="about-text">
+      <p>就労継続支援B型「華」事業所の運営方針は、利用者が自立した生活を送るためのサポートを提供することを目的とします。</p>
+      <p>まず、利用者一人ひとりの特性やニーズに合わせた個別支援計画を策定し、適切な作業訓練や生活支援を実施します。</p>
+      <p>地域社会との連携を強化し、利用者が地域での生活を豊かにできるよう支援します。</p>
+      <p>さらに、利用者やその家族からのフィードバックを積極的に取り入れ、運営の改善に努めます。</p>
+      <p>経験豊かなスタッフがサポートし、個々のニーズに合わせた支援を行います。</p>
+    </div>
+    <div class="about-image">
+      <img src="images/your-image.png" alt="事業所イラスト">
+    </div>
+  </div>
+</section>
+
+<!-- 提供サービスカード（既存そのまま） -->
+<section id="services">
+  <h2>提供サービス</h2>
+  <p>「華」では、安心して働き、学べる多彩なサービスを提供しています。</p>
+  <div class="services-container">
+    <div class="service-card">
+      <h3>就労訓練・支援</h3>
+      <p>個々の特性に合わせた作業訓練を実施し、働く力を育みます。</p>
+    </div>
+    <div class="service-card">
+      <h3>食事の提供</h3>
+      <p>作業終了後はお弁当がもらえます。</p>
+    </div>
+    <div class="service-card">
+      <h3>生活支援</h3>
+      <p>日常生活の自立をサポート。相談や作業指導を通じて安心した生活を支えます。</p>
+    </div>
+    <a href="about.html" class="service-card">
+      <h3>華珈琲</h3>
+      <p>喫茶サービスを通じて接客や調理の実践的な体験が可能です。</p>
+    </a>
+    <a href="yumenoyado.html" class="service-card">
+      <h3>民泊運営</h3>
+      <p>民泊の運営体験を通じて、地域社会とのつながりやホスピタリティを学びます。</p>
+    </a>
+  </div>
+</section>
+
+<!-- ご利用の流れ -->
+<section id="flow">
+  <h2>ご利用の流れ</h2>
+<p>ご利用開始までのステップをご紹介します。</p>
+
+<p>
+受給者証をお持ちで、施設の利用を希望される方は、見学後に面談・契約の手続きを行います。
+</p>
+
+<p>
+※受給者証をお持ちでない方は、お住まいの市区町村の窓口で障がい者福祉サービス受給者証申請の手続きを行っていただきます。
+</p>
+
+<p>
+※ご不明な点などございましたら当事業所の方でサポートいたします。
+皆さんのニーズにあったお仕事をご紹介させていただきます。
+</p>
+
+
+​01．まずはお電話、もしくはメールでお問い合わせください
+​02．施設見学・面談
+正式な手続きが完了しましたら、ご利用を開始いただけます。
+
+受給者証をお持ちの方であれば面談の翌日よりご利用を開始していただけます。
+  <div class="flowchart-wrapper">
+    <img src="images/flowchart.png" alt="ご利用の流れ" class="flowchart-image">
+  </div>
+  <div class="flow-steps">
+    <div class="flow-step">
+      <div class="step-number">1</div>
+      <p>お問い合わせ・見学予約</p>
+    </div>
+    <div class="flow-step">
+      <div class="step-number">2</div>
+      <p>面談・個別支援計画の作成</p>
+    </div>
+    <div class="flow-step">
+      <div class="step-number">3</div>
+      <p>作業体験・就労支援開始</p>
+    </div>
+    <div class="flow-step">
+      <div class="step-number">4</div>
+      <p>日常生活支援・定期面談</p>
+    </div>
+  </div>
+</section>
+
+<!-- 利用者の声 -->
+<section id="testimonials">
+  <h2>利用者の声</h2>
+  <blockquote>
+    <p>「スタッフのサポートで、安心して就労することができました。」</p>
+    <footer><cite>利用者Aさん</cite></footer>
+  </blockquote>
+  <blockquote>
+    <p>「実習を通じて自信が持てるようになり、社会とのつながりが広がりました。」</p>
+    <footer><cite>利用者Bさん</cite></footer>
+  </blockquote>
+</section>
+
+<!-- アクセス -->
+<section id="access">
+  <h2>アクセス</h2>
+  <p>就労継続支援B型事業所 華 の所在地はこちらです。</p>
+<div class="map-wrapper">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4038.8378723059004!2d135.4985982763099!3d34.645682786162034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000dd8965046ee5%3A0x52390e4e265ec30c!2z44CSNTU3LTAwMDQg5aSn6Ziq5bqc5aSn6Ziq5biC6KW_5oiQ5Yy66JCp5LmL6Iy25bGL77yS5LiB55uu77yT4oiS77yS77yTIOOBmeOBmuOCieOCk-ODk-ODqw!5e1!3m2!1sja!2sjp!4v1759125438949!5m2!1sja!2sjp" 
+      width="100%" 
+      height="100%" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <div class="access-info">
+    <h3>所在地</h3>
+    <p>〒557-0004 大阪府大阪市西成区萩之茶屋２丁目３−２３ すずらんビル</p>
+    <h3>アクセス方法</h3>
+    <ul>
+      <li><strong>電車でお越しの方：</strong> 南海電鉄「萩ノ茶屋駅」から徒歩約3分</li>
+      <li><strong>地下鉄でお越しの方：</strong> 大阪メトロ御堂筋線「動物園前駅」から徒歩約7分</li>
+      <li><strong>JRをご利用の方：</strong> JR「新今宮駅」から徒歩約8分</li>
+    </ul>
+    <h3>お問い合わせ</h3>
+    <p>📞 06-6964-8651</p>
+    <p>✉️ <a href="mailto:nishinari.hana@gmail.com">nishinari.hana@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- お問い合わせ -->
+<section id="contact">
+  <h2>お問い合わせ</h2>
+  <p>ご不明点や見学のご希望などがありましたら、以下のボタンからお問い合わせフォームへお進みください。</p>
+  <div style="text-align: center; margin: 30px 0;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHKXZYnHs-_nS_865wjpKaYiTmb5aNFCIjNDwsC8vfSEcKJw/viewform?usp=dialog/viewform" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="contact-btn">
+       お問い合わせフォームへ
+    </a>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer>
+  <p>&copy; 2025 就労継続支援B型事業所 華</p>
+</footer>
+<!-- トップへ戻るボタン -->
+<button id="scrollTopBtn" aria-label="トップへ戻る">▲</button>
+<script>
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.classList.add("show");
+    } else {
+      scrollTopBtn.classList.remove("show");
+    }
+  });
+
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+</body>
+</html>
