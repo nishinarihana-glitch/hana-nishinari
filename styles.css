@@ -821,3 +821,26 @@ body.hanacoffee #experience ul {
   text-align: left;
 }
 
+/* ===============================
+   スマホ表示：ナビゲーション修正
+================================= */
+@media screen and (max-width: 768px) {
+
+  body.minpaku nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  body.minpaku nav .menu-icon {
+    margin-bottom: 10px;
+  }
+
+  body.minpaku nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
