@@ -834,11 +834,16 @@ body.hanacoffee #access ul {
 }
 
 /* ===============================
-   華珈琲ページ：アクセス背景
+   華珈琲ページ：背景色をベージュで統一
 ================================= */
-.hanacoffee #access {
+body.hanacoffee .cafe-guide,
+body.hanacoffee #access,
+body.hanacoffee #contact,
+body.hanacoffee #menu,
+body.hanacoffee #experience {
   background-color: #f7f2ec; /* ベージュ系 */
 }
+
 
 /* ===============================
    華珈琲ページ：地図を少し小さく
