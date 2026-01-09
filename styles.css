@@ -789,6 +789,7 @@ body.minpaku h2 {
 ================================= */
 body.hanacoffee .cafe-guide p,
 body.hanacoffee #menu p,
+body.hanacoffee #access > p,
 body.hanacoffee #contact > p {
   text-align: center;
 }
@@ -821,6 +822,42 @@ body.hanacoffee #experience ul {
   text-align: left;
 }
 
+body.hanacoffee #access .access-info {
+  max-width: 800px;     /* 横幅を制限して読みやすく */
+  margin: 0 auto;       /* 中央寄せ */
+  text-align: left;   /* 文字も中央 */
+}
+
+body.hanacoffee #access ul {
+  list-style-position: inside; /* 箇条書きも中央に自然 */
+  padding-left: 0;
+}
+
+/* ===============================
+   華珈琲ページ：アクセス背景
+================================= */
+.hanacoffee #access {
+  background-color: #f7f2ec; /* ベージュ系 */
+}
+
+/* ===============================
+   華珈琲ページ：地図を少し小さく
+================================= */
+.hanacoffee .map-wrapper {
+  max-width: 800px;   /* 地図の横幅（700〜900pxで調整OK） */
+  height: 350px;      /* 高さを少し低めに */
+  margin: 30px auto;  /* 中央寄せ */
+  border-radius: 12px;
+  overflow: hidden;  /* 角丸を効かせる */
+}
+
+@media (max-width: 768px) {
+  .hanacoffee .map-wrapper {
+    max-width: 100%;
+    height: 280px;
+  }
+}
+
 /* ===============================
    全ページ共通：スマホではロゴ非表示
 ================================= */
@@ -839,6 +876,4 @@ body.hanacoffee #experience ul {
     margin: 10px 0;
   }
 }
-
-
 
