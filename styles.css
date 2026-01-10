@@ -84,12 +84,20 @@ section h2 {
 }
 
 /* ===============================
-   利用者の声
+   背景色を統一するセクション
 ================================= */
-#testimonials {
+#about,
+#services,
+#testimonials,
+#flow,
+#access,
+#contact {
     background-color: #f9fdf9;
 }
 
+/* ===============================
+   利用者の声
+================================= */
 blockquote {
     background-color: #f0f8f5;
     border-left: 5px solid #4CAF50;
