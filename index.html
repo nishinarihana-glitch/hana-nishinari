@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <!-- gogleサーチコンソール -->
+  <meta name="google-site-verification" content="jhVLaA9lHUqcsHN7Vgb_ZjohfeBR7L8hz4PKg0U3AXU" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="就労継続支援B型事業所 華（大阪市西成区）は、障がいのある方の自立と社会参加を支援する福祉施設です。多様な就労訓練や民泊運営など、個別のニーズに応じた支援を行っています。">
@@ -253,8 +255,13 @@
 
 <!-- フッター -->
 <footer>
-  <p>&copy; 2026 就労継続支援B型事業所 華</p>
+  <p>&copy; <span id="year"></span> 就労継続支援B型事業所 華</p>
 </footer>
+<!-- 年（2026など）を自動取得して表示 -->
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 <!-- トップへ戻るボタン -->
 <button id="scrollTopBtn" aria-label="トップへ戻る">▲</button>
 <script>
